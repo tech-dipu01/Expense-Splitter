@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Splitter</h1>
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contributed">Contributed:</label>
+                <input type="number" id="contributed" required>
+            </div>
+            <div class="form-group">
+                <label for="expenses">Expenses Made:</label>
+                <input type="number" id="expenses" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" id="description">
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+        <div class="buttons">
+            <button id="calculateButton">Calculate Settlements</button>
+            <button id="clearButton">Clear Data</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
